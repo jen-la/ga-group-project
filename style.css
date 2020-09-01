@@ -47,8 +47,12 @@ footer {
 
 /* Add Task Modal */
 
+.form {
+  text-align: left;
+}
+
 .form-inline {
   display: flex;
   flex-flow: row wrap;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
