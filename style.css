@@ -26,7 +26,37 @@ body {
     min-height: 100vh;
     background-color: blue;
 }
-  
+/* styles for task cards */
 .card {
     margin: 15px 10px 15px 10px;
+}
+#todocolor {
+    background-color:  #eb4d4b;
+    color: white;
+    font-weight: bold;
+}
+#inprogresscolor {
+    background-color:  #4834d4;
+    color: white;
+    font-weight: bold;
+}
+#donecolor {
+    background-color:  #6ab04c;
+    color: white;
+    font-weight: bold;
+}
+
+#reviewcolor {
+    background-color:  #f9ca24;
+    color: white;
+    font-weight: bold;
+}
+.taskcontainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+.list-group-item{
+    height: 30px;
+    padding-top: 2px;
+    padding-bottom: 2px;
 }
