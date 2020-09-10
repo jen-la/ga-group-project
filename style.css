@@ -68,3 +68,17 @@ footer {
     text-align: center;
     background-color: rgb(230, 233, 238);
 }
+
+/* for validation needs */
+
+.task-name-valid-feedback{
+    color:green;
+    visibility: hidden;
+
+}
+
+.task-name-invalid-feedback{
+    color: red;
+    visibility: hidden;
+
+}

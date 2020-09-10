@@ -23,7 +23,7 @@
     <div class="container-sm py-3 my-3 ">
         <div class="row justify-content-center">
             <div class="col-sm-4 py-3 my-3 border shadow " >
-                <form >
+                <form id="validateAddNewTaskForm" novalidation>
                     <div>
                         <button type="button" class="close" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
@@ -31,15 +31,21 @@
                     </div>
                     <h2 class="text-center mb-3 pt-3">Add New Task</h2>
                     <div class="form-group">   <!-- Enter Task name -->
-                        <input type="text" placeholder="Task Name" class="form-control" required>
+                        <input id="addNewTaskName" type="text" placeholder="Task Name" class="form-control"/>
+                            <div class="valid-feedback">Looks good!</div>
+                            <div class="invalid-feedback">Required and needs to be at least 8 characters long</div>
                     </div>
                     
                     <div class="form-group"> <!--Enter Dscription  -->
-                        <textarea placeholder="Description" class="form-control" required></textarea>
+                        <textarea id="addTaskDescription" placeholder="Description" class="form-control" ></textarea>
+                            <div class="valid-feedback">Looks good!</div>
+                            <div class="invalid-feedback">Required and needs to be at least 8 characters long</div>
                     </div>
                     
                     <div class="form-group"> <!--Assign To  -->
-                        <input type="text" placeholder="Assign To" class="form-control" required>
+                        <input id="addtaskAssignTo" type="text" placeholder="Assign To" class="form-control" >
+                            <div class="valid-feedback">Looks good!</div>
+                            <div class="invalid-feedback">Required and needs to be at least 8 characters long</div>
                     </div>
 
                     <div class="form-group"> <!--due date selection  -->
@@ -48,7 +54,9 @@
                                 <label for="Due">Set Due Date : </label>
                             </div>
                             <div class="col-sm pt-1   "> <!-- Status of the task -->
-                                <input type="date" class="form-control" required>
+                                <input id="addTaskDueDate" type="date" class="form-control" >
+                                    <div class="valid-feedback">Looks good!</div>
+                                    <div class="invalid-feedback">Required and should be today or a future date</div>
                             </div>
                         </div>     
                     </div>
@@ -59,7 +67,7 @@
                                 <label for="Status">Status : </label>
                             </div>
                             <div class="col-sm-7    "> <!-- Status of the task -->
-                                <select class="form-control " required>
+                                <select id="addStatus" class="form-control " required>
                                     <option class="select" >To Do</option>
                                     <option>In Progress</option>
                                     <option>In Review</option>
@@ -68,16 +76,16 @@
                             </div>
                         </div>     
                     </div>
-        
+                
                     <div class="form-group">  <!-- submit button -->
                         <div class="row">
                             <div class="col-sm align-content-center">
-                                <button type="submit" class="btn btn-primary form-control mb-3">CREATE</button>
+                                <button id="newTaskfromSubmit" type="submit" class="btn btn-primary form-control mb-3">CREATE</button>
                             </div>
 
-                            <div class="col-sm align-content-center">
+                            <!-- <div class="col-sm align-content-center">
                                 <button type="submit" class="btn btn-primary form-control">CLEAR</button>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
 
@@ -92,6 +100,10 @@
         
 
     </div>
+
+
+
+    <script src="index.js"></script> <!-- add js file -->
 
 
 </body>
