@@ -43,13 +43,16 @@ validateTaskForm.addEventListener("submit", (event) => {
 
   //validate set due date Not Empty and not in the past
   var today = new Date(); //create a new object from date method
-  if (today <= Date.parse(addDueDate.value)) {
+  const todayDateString = new Date(Date.UTC(today.getFullYear(),today.getMonth(), today.getDate()));
+  
+  if (todayDateString <= Date.parse(addDueDate.value)) {
     addDueDate.classList.add("is-valid");
     addDueDate.classList.remove("is-invalid");
   } else {
     addDueDate.classList.remove("is-valid");
     addDueDate.classList.add("is-invalid");
   }
+
 
   // //validate status
   // /* status selectlist default selected to do. so the value not null always.
