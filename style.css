@@ -8,7 +8,7 @@ body {
 
 .navbar {
   background-color: #dfffe2;
-  box-shadow: 5px 5px 10px 7px rgba(178,173,170,0.5);
+  box-shadow: 5px 5px 10px 7px rgba(178, 173, 170, 0.5);
   height: 100px;
 }
 
@@ -54,7 +54,7 @@ body {
 }
 
 .today {
-  max-width: 60%;
+  max-width: 40%;
 }
 
 /* .calendarDetails h1 {
@@ -90,7 +90,7 @@ body {
 
 #adminCard {
   border-radius: 20px;
-  box-shadow: 5px 5px 10px 7px rgba(178,173,170,0.5);
+  box-shadow: 5px 5px 10px 7px rgba(178, 173, 170, 0.5);
   max-width: 75%;
   max-height: 98%;
 }
@@ -103,7 +103,6 @@ body {
 
 .adminBtn {
   max-width: 50%;
-  
 }
 
 #planner_panel {
@@ -181,17 +180,15 @@ form {
   font-family: shackelton, serif;
   font-weight: 400;
   font-style: normal;
- }
-
+}
 
 .form textarea {
   font-size: 1.25em;
-} 
+}
 
 .form input {
   font-size: 1.25em;
 }
-
 
 #comingSoon.modal {
   position: absolute;
@@ -208,7 +205,7 @@ form {
   font-family: shackleton, serif;
   font-weight: 400;
   font-style: normal;
-  color:#e8dfb5;
+  color: #e8dfb5;
   font-size: 36px;
 }
 
@@ -218,7 +215,6 @@ form {
   font-style: normal;
   color: slategray;
   font-size: 36px;
-
 }
 
 .modal-footer {
